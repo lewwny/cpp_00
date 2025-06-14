@@ -6,9 +6,12 @@
 /*   By: lenygarcia <lenygarcia@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/13 18:03:31 by lenygarcia        #+#    #+#             */
-/*   Updated: 2025/06/14 14:39:13 by lenygarcia       ###   ########.fr       */
+/*   Updated: 2025/06/14 14:57:30 by lenygarcia       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#ifndef PHONEBOOK_HPP
+#define PHONEBOOK_HPP
 
 #include <iostream>
 #include <string>
@@ -29,3 +32,5 @@ public:
 	void	displayonecontact(int index) const;
 	int		getindex() const;
 };
+
+#endif
