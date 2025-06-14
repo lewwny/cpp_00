@@ -6,13 +6,14 @@
 /*   By: lenygarcia <lenygarcia@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/13 18:03:31 by lenygarcia        #+#    #+#             */
-/*   Updated: 2025/06/14 12:55:50 by lenygarcia       ###   ########.fr       */
+/*   Updated: 2025/06/14 14:39:13 by lenygarcia       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <string>
 #include <iomanip>
+#include <sstream>
 #include "contact.hpp"
 
 class Phonebook
@@ -25,5 +26,6 @@ public:
 	~Phonebook();
 	void	addcontact();
 	void	displaycontacts() const;
-	// void	displayonecontact(int index) const;
+	void	displayonecontact(int index) const;
+	int		getindex() const;
 };
