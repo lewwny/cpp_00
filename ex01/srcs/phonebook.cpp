@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   phonebook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lenygarcia <lenygarcia@student.42.fr>      +#+  +:+       +#+        */
+/*   By: lengarci <lengarci@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/13 18:03:36 by lenygarcia        #+#    #+#             */
-/*   Updated: 2025/06/14 14:50:28 by lenygarcia       ###   ########.fr       */
+/*   Updated: 2025/07/02 10:59:10 by lengarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,10 @@ void	Phonebook::displaycontacts() const
 	std::cout << "-------------------------------------------" << std::endl;
 	std::cout << "|    Index|First name| Last name| Nickname|" << std::endl;
 	std::cout << "-------------------------------------------" << std::endl;
-	for (int i = 0; i < _index; i++)
+	for (int i = 0; i < 8; i++)
 	{
+		if (i >= _index)
+			break;
 		std::cout << "|" << std::setw(10) << std::right << i + 1
 				  << "|" << std::setw(10) << std::right << troncstr(_contacts[i].getfirstname())
 				  << "|" << std::setw(10) << std::right << troncstr(_contacts[i].getlastname())
